@@ -1,9 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Git Repository</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muthupandi Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: #222;
+            color: #fff;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Muthupandi - Unity Game Developer</h1>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am a Unity 2D/3D Game Developer with experience in Slot Games, Card Games, Fish Games, and WebGL builds.
+        </p>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+    </div>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="images/project1.png" alt="Project 1" />
+                <h3>Slot Game</h3>
+                <p>5-Reel slot game with smooth animations and reel spin mechanics.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/project2.png" alt="Project 2" />
+                <h3>Andar Bahar</h3>
+                <p>Card throw mechanic, side placement, and smooth UI.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/project3.png" alt="Project 3" />
+                <h3>Fish Game</h3>
+                <p>AI fish movement, chase & flee logic, and random spawning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Unity 2D / 3D</li>
+            <li>C# Programming</li>
+            <li>DOTween Animation</li>
+            <li>Card Game Mechanics</li>
+            <li>Slot Game Reel Animation</li>
+            <li>WebGL Game Build</li>
+            <li>Shader Graph Basics</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <strong>yourmail@gmail.com</strong></p>
+        <p>GitHub: <a href="https://github.com/Muthupandi601">github.com/Muthupandi601</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Muthupandi – Unity Developer Portfolio</p>
+    </footer>
 </body>
+
 </html>
